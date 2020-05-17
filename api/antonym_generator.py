@@ -31,9 +31,3 @@ class AntonymGenerator:
 
         return " ".join(output)
 
-
-# newGenerator = AntonymGenerator()
-# paragraph1 = "Apple is looking at buying U.K. startup for $1 billion. That is a big elephant."
-# paragraph2 = "You are a bad person, Delly."
-# print(newGenerator.process_string(paragraph1))
-# print(newGenerator.process_string(paragraph2))
