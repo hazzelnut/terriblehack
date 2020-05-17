@@ -1,6 +1,4 @@
-#!/bin/sh
-'''exec' "/Users/tomqiu/Documents/ImportantStuff/Personal Projects/terriblehack/api/venv/bin/python" "$0" "$@"
-' '''
+#!/Users/ericchan/Desktop/dev/terriblehack/api/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
