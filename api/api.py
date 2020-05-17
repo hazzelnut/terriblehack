@@ -1,5 +1,5 @@
 import time
-from flask import Flask
+from flask import Flask, request
 
 api = Flask(__name__)
 
@@ -9,6 +9,12 @@ def get_current_time():
 
 @api.route('/magicwords', methods=['POST'])
 def get_magic_words():
-  string = request.form['value']
-  print(string) 
-  return {'data': 'helloworld'} 
+  data = request.get_json()
+  value = data['value']
+
+  # TODO: insert logic here
+  print(value)
+
+  # TODO: Input return value here
+  magic_string = '123123'
+  return {'data': magic_string}
