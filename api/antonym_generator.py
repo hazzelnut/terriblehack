@@ -4,7 +4,6 @@ from nltk.corpus import wordnet as wn
 
 class AntonymGenerator:
     def __init__(self):
-        nltk.download('punkt')
         self.punctuation = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<',
                             '=', '>', '?', '@', '[', '\\', ']', '^', '_', '`', '{', '|', '}', '~']
 
