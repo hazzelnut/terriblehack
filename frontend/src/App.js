@@ -41,7 +41,7 @@ class App extends React.Component {
           <input className="textbox" type="text" value={this.state.value} onChange={this.handleChange} />
         </div>
         <button className="submitBtn" onClick={this.handleSubmit}>
-          Button
+          Magic! 
         </button>
       </div>
     );
