@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import axios from 'axios';
 
 class App extends React.Component {
   constructor(props) {
@@ -17,8 +18,13 @@ class App extends React.Component {
   }
 
   handleSubmit(event) {
-    alert(this.state.value);
     event.preventDefault();
+    let value = this.state.value;
+    axios.post('/magicwords', { value })
+      .then(res => {
+        console.log(res);
+        console.log(res.data);
+      })
   }
 
   render() {
