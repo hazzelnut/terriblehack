@@ -16,7 +16,10 @@ pip install -r requirements.txt
 python download.py
 # This should open up a window
 # Navigate to 'All Packages' and install punkt, words, wordnet, wordnet_ic 
+```
+![Pic of window](https://github.com/hazzelnut/terriblehack/blob/master/downloads.png?raw=true)
 
+```
 # Run Flask app to serve the API
 flask run
 ```
