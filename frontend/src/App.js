@@ -20,12 +20,19 @@ class App extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
     let value = this.state.value;
-    axios.post('/magicwords', { value })
-      .then(res => {
-        console.log(res);
-        console.log(res.data);
-      })
+    axios({
+      method: 'post',
+      url: '/magicwords',
+      data: {
+        value,
+      }
+    })
+    .then(res => {
+      let magicWords = res.data.data;
+      this.setState({value: magicWords})
+    })
   }
+
 
   render() {
     return (
